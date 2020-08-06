@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>dsplk - 网站收藏站</title>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">- DSPLK -</div>
+    </header>
+    <main class="globalMain">
+      <form class="search" method="get" action="https://www.baidu.com/s">
+        <input type="text" />
+        <button type="submit">
+          搜索
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#iconsearch"></use>
+          </svg>
+        </button>
+      </form>
+
+      <div class="siteList">
+        <ul>
+          <li class="last">
+            <div class="addButton">
+              <div class="siteLogo">
+                <svg class="icon">
+                  <use xlink:href="#iconzengjia"></use>
+                </svg>
+              </div>
+              <div class="siteLink">添加新网站</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="//at.alicdn.com/t/font_1986130_xxwy1zziap.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

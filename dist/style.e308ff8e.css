@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #0282b9ab;
+}
+body {
+  background: #eee;
+}
+.search {
+  margin: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.search > input {
+  width: 100%;
+  margin-right: 10px;
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.search > button {
+  white-space: nowrap;
+  padding: 0 28px;
+  padding-right: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  background: #0282b9;
+}
+.search > button .icon {
+  color: fff;
+  width: 25px;
+}
+.siteList {
+  flex-direction: row;
+}
+.siteList > ul {
+  margin: 0 30px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.siteContent {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+  padding: 20px 0;
+}
+.siteList .siteContent .siteLogo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+}
+.siteList .siteContent .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: none;
+  cursor: default;
+}
+.siteList .siteContent:hover > .close {
+  display: block;
+}
+
+.siteLink {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siteList .addButton {
+  width: 160px;
+  background: white;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.siteList .addButton .icon {
+  width: 64px;
+  height: 64px;
+}
+
+@media (min-width: 500px) {
+  .search {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
